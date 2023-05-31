@@ -1,0 +1,36 @@
+##we can install our dependences in 3-ways
+1)- for devlopment purpose ->(--save-dev) ----> npm install --save-dev nodemon
+2)- for production purpose ->(--save) ----> npm install --save nodemon
+3)- for globally ->(-g) ----> npm install -g nodemon
+
+##we need to add start into a script section in "package.json" file 
+"start": "nodemon app.js" // in value, we have to add "node filename" which i want to start if we don't have nodemon then otherwise we use nodemon instead of node before the file name.
+then how we can start our serevr 
+npm start ---> start command is nothing but "node filename"/"nodemon filename".
+
+##once you install you dependences it is look like this in your" package.json "file
+  "devDependencies": {
+    "nodemon": "^2.0.22"  // ^ this upper arrow means(agar new version aaya to yeh install kr dega bas "npm install" likhna padega fir jitnani bi dependences hogi sabka new version hoga to yeh download kar dega) if you are search npm install blindly then it will try to find new version of your dependencies and install new version of your dependences automatically.
+  }
+
+  Note:
+  nodemon--> it is use to start the server automatically.
+
+  *********************************
+  ## use() -----> it take care of both get and post.
+
+  get ---> 
+  it read something from file.
+  it read somthing from database.
+  post ---> 
+  it write something into the file.
+  it write something into the database.
+  app.use() ---> 
+
+  ********************************************
+  MVC --> MODEL VIEW CONTROLLER
+
+  MODEL(DATA) ---> IT CONTAINS THE DATA.
+  VIEW (UI / FRONT END) ---> IT CONTAINS THE UI/FRONT END.
+  CONTROLLER (PATH / API) -----> IT CONTAINS THE PATH / API.(write the router logics export it )
+  router ---> (import the logic which you write in controller and use into it)
